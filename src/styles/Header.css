@@ -1,0 +1,135 @@
+/*PALETA DE COLORES*/
+:root {
+  --primary-color: #005a6a;
+  --secundary-color: #116b7c;
+  --complementary-color-1: #439fb0;
+  --complementary-color-2: #328e9f;
+  --complementary-color-3: #227d8d;
+
+  --white-color: #f3f3f3;
+}
+
+header {
+  background: #f3f3f3;
+  height: 550px;
+  position: relative;
+  overflow: hidden;
+  /* From https://css.glass */
+  background: rgba(243, 243, 243, 0.59);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.7px);
+  -webkit-backdrop-filter: blur(7.7px);
+  border: 1px solid rgba(243, 243, 243, 0.75);
+}
+.name{
+  display: flex;
+  width: 92%;
+  height: 90px;
+  margin: auto;
+  align-items: center;
+}
+header .container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  height: 400px;
+  align-items: center;
+  justify-content: space-between;
+}
+.name img{
+  width: 80px;
+  height: 80px;
+}
+
+.name h3{
+  color: var(--primary-color);
+  font-weight: 400;
+}
+
+.text-container {
+  width: 40%;
+  color: var(--primary-color);
+}
+
+.text-container h1 {
+  font-size: 52px;
+}
+
+.text-container h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+  color: var(--complementary-color-2);
+}
+
+.text-container span {
+  opacity: 0.5;
+}
+
+header img {
+  width: 650px;
+  z-index: 10;
+  position: relative;
+}
+
+header .text-container a:hover {
+  transition: all ease 300ms;
+  background: var(--complementary-color-3);
+}
+
+
+
+@media screen and (max-width: 900px) {
+  header .container {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px 0;
+  }
+  .name{
+    width: 95%;
+    margin-bottom: 25px;
+  }
+  .text-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  header img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header{
+    height: 600px;
+  }
+  header .container {
+    padding-top: 70px;
+    width: 95%;
+  }
+  .text-container h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .text-container h2 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  header img {
+    width: 250px;
+  }
+  .name{
+    width: 90%;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .name img{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media screen and (max-width: 200px) {
+  header img {
+    width: 180px;
+  }
+}

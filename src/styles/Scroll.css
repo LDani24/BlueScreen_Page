@@ -1,0 +1,29 @@
+:root {
+    --primary-color: #005a6a ;
+    --secundary-color: #116b7c ;
+    --complementary-color-1: #439fb0 ;
+    --complementary-color-2: #328e9f ;
+    --complementary-color-3: #227d8d ;
+  
+    --white-color:#f3f3f3;
+  }
+  
+progress{
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    --webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border: none;
+    background: transparent;
+}
+
+progress::-webkit-progress-bar{
+    background: transparent;
+}
+
+progress::-webkit-progress-value{
+    background-color: var(--complementary-color-1);
+}
