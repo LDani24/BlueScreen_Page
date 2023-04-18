@@ -16,7 +16,14 @@
   justify-content: space-between;
 }
 
+.container-section-center{
+  display: flex;
+  width: 90%;
+  margin: 3rem auto;
+  align-items: center;
+  justify-content: center;
 
+}
 
 
 .title-section{
@@ -39,8 +46,8 @@
   color: var(--complementary-color-1);
 }
 .image-section img{
-    width: 450px;
-    margin-right: 150px;
+    width: 500px;
+    height: 600px;
 }
 
 @media screen and (max-width:900px){
@@ -63,7 +70,13 @@
     margin-right: -150px;
 
   }
+  .image-section{
+    display: flex;
+    margin: 20px auto;
+  }
   .image-section img{
+    
     width: 250px;
+    height: 250px;
   }
 }

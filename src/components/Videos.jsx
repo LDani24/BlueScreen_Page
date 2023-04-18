@@ -3,8 +3,9 @@ import React, { useState } from "react";
 //Libreria del Carousel
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-//Impor de Script
+//Import de Script
 import videos from "../data/script";
+
 //Estilos
 import "../styles/Carousel.css";
 import Button from "react-bootstrap/Button";
